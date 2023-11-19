@@ -1,5 +1,3 @@
-import { ModeToggle } from "@/components/mode-toggle";
-import { Button } from "@/components/ui/button";
 import Hero from "./_components/hero";
 import ClientClouds from "./_components/client-clouds";
 import Benefits from "./_components/benefits";
@@ -8,7 +6,7 @@ import WhatWeDo from "./_components/what-we-do";
 import MediaClouds from "./_components/media-clouds";
 import FreeTrial from "./_components/free-trial";
 import HowToUse from "./_components/how-to-use";
-import SuccesStories from "./_components/succes-stories";
+import Stories from "./_components/stories";
 
 export default function HomePage() {
   return (
@@ -35,7 +33,7 @@ export default function HomePage() {
       <HowToUse />
 
       {/* SuccesStories */}
-      <SuccesStories />
+      <Stories />
 
       {/* MediaClouds */}
       <MediaClouds />
