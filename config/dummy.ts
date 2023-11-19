@@ -1,3 +1,331 @@
+// LogoClouds
+export const dummyLogoClouds = [
+  { id: 1, image: 22 },
+  { id: 2, image: 27 },
+  { id: 3, image: 35 },
+  { id: 4, image: 36 },
+  { id: 5, image: 37 },
+  { id: 6, image: 38 },
+  { id: 7, image: 39 },
+  { id: 8, image: 40 },
+  { id: 9, image: 51 },
+  { id: 10, image: 54 },
+  { id: 11, image: 58 },
+  { id: 12, image: 60 },
+  { id: 13, image: 61 },
+  { id: 14, image: 62 },
+  { id: 15, image: 64 },
+  { id: 16, image: 65 },
+  { id: 21, image: 22 },
+  { id: 22, image: 27 },
+  { id: 23, image: 35 },
+  { id: 24, image: 36 },
+  { id: 25, image: 37 },
+  { id: 26, image: 38 },
+  { id: 27, image: 39 },
+  { id: 28, image: 40 },
+  { id: 29, image: 51 },
+  { id: 30, image: 54 },
+  { id: 31, image: 58 },
+  { id: 32, image: 60 },
+  { id: 33, image: 61 },
+  { id: 34, image: 62 },
+  { id: 35, image: 64 },
+  { id: 36, image: 65 },
+];
+
+// Reviews
+export const dummyReviews = [
+  {
+    id: 1,
+    user: {
+      name: "Budi Santoso",
+      city: "Jakarta",
+      age: 35,
+      gender: "man",
+      media: 1,
+    },
+    institution: {
+      name: "PT ABC",
+      city: "Jakarta",
+      position: "Manager",
+      media: 22,
+    },
+    review:
+      "Saya sangat puas dengan aplikasi Qiscus. Fitur-fiturnya sangat lengkap dan mudah digunakan. Komunikasi dengan tim menjadi lebih efisien dan produktif. Terima kasih Qiscus!",
+  },
+  {
+    id: 2,
+    user: {
+      name: "Ratna Dewi",
+      city: "Surabaya",
+      age: 28,
+      gender: "woman",
+      media: 2,
+    },
+    institution: {
+      name: "PT XYZ",
+      city: "Surabaya",
+      position: "Marketing",
+      media: 27,
+    },
+    review:
+      "Saya sangat terbantu dengan adanya aplikasi Qiscus. Dengan aplikasi ini, saya dapat dengan mudah berkomunikasi dengan kolega di kantor. Fitur video call dan file sharing sangat membantu dalam melakukan presentasi. Terima kasih Qiscus!",
+  },
+  {
+    id: 3,
+    user: {
+      name: "Ahmad Hidayat",
+      city: "Bandung",
+      age: 31,
+      gender: "man",
+      media: 3,
+    },
+    institution: {
+      name: "PT PQR",
+      city: "Bandung",
+      position: "Developer",
+      media: 35,
+    },
+    review:
+      "Saya sangat senang menggunakan aplikasi Qiscus. Fitur chat yang disediakan sangat keren dan dapat diintegrasikan dengan mudah ke dalam aplikasi yang sedang saya bangun. Terima kasih Qiscus!",
+  },
+  {
+    id: 4,
+    user: {
+      name: "Siti Nurlela",
+      city: "Yogyakarta",
+      age: 25,
+      gender: "woman",
+      media: 4,
+    },
+    institution: {
+      name: "PT LMN",
+      city: "Yogyakarta",
+      position: "Customer Service",
+      media: 36,
+    },
+    review:
+      "Aplikasi Qiscus sangat membantu dalam meningkatkan kualitas pelayanan kami kepada pelanggan. Fitur live chat yang disediakan sangat praktis dan mudah digunakan. Terima kasih Qiscus!",
+  },
+  {
+    id: 5,
+    user: {
+      name: "Eko Prasetyo",
+      city: "Surabaya",
+      age: 33,
+      gender: "man",
+      media: 5,
+    },
+    institution: {
+      name: "PT EFG",
+      city: "Surabaya",
+      position: "HR Manager",
+      media: 37,
+    },
+    review:
+      "Dengan adanya aplikasi Qiscus, proses rekrutmen karyawan menjadi lebih efisien. Kami dapat dengan mudah berkomunikasi dengan calon karyawan melalui fitur chat. Terima kasih Qiscus!",
+  },
+  {
+    id: 6,
+    user: {
+      name: "Rina Wulandari",
+      city: "Jakarta",
+      age: 29,
+      gender: "woman",
+      media: 6,
+    },
+    institution: {
+      name: "PT HIJ",
+      city: "Jakarta",
+      position: "Finance",
+      media: 38,
+    },
+    review:
+      "Saya sangat puas dengan aplikasi Qiscus. Dengan aplikasi ini, saya dapat dengan mudah berkomunikasi dengan rekan kerja di kantor maupun di cabang lain. Terima kasih Qiscus!",
+  },
+  {
+    id: 7,
+    user: {
+      name: "Yudi Susanto",
+      city: "Bandung",
+      age: 27,
+      gender: "man",
+      media: 7,
+    },
+    institution: {
+      name: "PT KLM",
+      city: "Bandung",
+      position: "Designer",
+      media: 39,
+    },
+    review:
+      "Saya sangat terbantu dengan adanya aplikasi Qiscus. Dengan fitur chat yang disediakan, saya dapat dengan mudah berkomunikasi dengan klien. Proses diskusi dan revisi menjadi lebih efisien. Terima kasih Qiscus!",
+  },
+  {
+    id: 8,
+    user: {
+      name: "Anita Sari",
+      city: "Surabaya",
+      age: 30,
+      gender: "woman",
+      media: 8,
+    },
+    institution: {
+      name: "PT NOP",
+      city: "Surabaya",
+      position: "Sales",
+      media: 40,
+    },
+    review:
+      "Aplikasi Qiscus sangat membantu dalam meningkatkan produktivitas tim sales kami. Dengan fitur chat yang disediakan, kami dapat dengan mudah berkomunikasi dan berkoordinasi satu sama lain. Terima kasih Qiscus!",
+  },
+  {
+    id: 9,
+    user: {
+      name: "Hendri Setiawan",
+      city: "Jakarta",
+      age: 32,
+      gender: "man",
+      media: 9,
+    },
+    institution: {
+      name: "PT QRS",
+      city: "Jakarta",
+      position: "IT Support",
+      media: 51,
+    },
+    review:
+      "Saya sangat senang menggunakan aplikasi Qiscus. Fitur chat yang disediakan sangat lengkap dan mudah digunakan. Dukungan dari tim Qiscus juga sangat baik. Terima kasih Qiscus!",
+  },
+  {
+    id: 10,
+    user: {
+      name: "Dewi Kurniati",
+      city: "Bandung",
+      age: 26,
+      gender: "woman",
+      media: 10,
+    },
+    institution: {
+      name: "PT TUV",
+      city: "Bandung",
+      position: "Customer Support",
+      media: 54,
+    },
+    review:
+      "Aplikasi Qiscus sangat membantu dalam meningkatkan pelayanan kami kepada pelanggan. Fitur chat yang disediakan sangat praktis dan mudah digunakan. Terima kasih Qiscus!",
+  },
+  {
+    id: 11,
+    user: {
+      name: "Arif Pratama",
+      city: "Surabaya",
+      age: 34,
+      gender: "man",
+      media: 11,
+    },
+    institution: {
+      name: "PT WXY",
+      city: "Surabaya",
+      position: "Manager",
+      media: 58,
+    },
+    review:
+      "Saya sangat puas dengan aplikasi Qiscus. Fitur-fiturnya sangat lengkap dan mudah digunakan. Komunikasi dengan tim menjadi lebih efisien dan produktif. Terima kasih Qiscus!",
+  },
+  {
+    id: 12,
+    user: {
+      name: "Rita Wijaya",
+      city: "Jakarta",
+      age: 29,
+      gender: "woman",
+      media: 12,
+    },
+    institution: {
+      name: "PT ZZZ",
+      city: "Jakarta",
+      position: "Marketing",
+      media: 60,
+    },
+    review:
+      "Saya sangat terbantu dengan adanya aplikasi Qiscus. Dengan aplikasi ini, saya dapat dengan mudah berkomunikasi dengan kolega di kantor. Fitur video call dan file sharing sangat membantu dalam melakukan presentasi. Terima kasih Qiscus!",
+  },
+  {
+    id: 13,
+    user: {
+      name: "Ahmad Fauzi",
+      city: "Bandung",
+      age: 31,
+      gender: "man",
+      media: 13,
+    },
+    institution: {
+      name: "PT YYY",
+      city: "Bandung",
+      position: "Developer",
+      media: 61,
+    },
+    review:
+      "Saya sangat senang menggunakan aplikasi Qiscus. Fitur chat yang disediakan sangat keren dan dapat diintegrasikan dengan mudah ke dalam aplikasi yang sedang saya bangun. Terima kasih Qiscus!",
+  },
+  {
+    id: 14,
+    user: {
+      name: "Siti Rahayu",
+      city: "Yogyakarta",
+      age: 25,
+      gender: "woman",
+      media: 14,
+    },
+    institution: {
+      name: "PT XXX",
+      city: "Yogyakarta",
+      position: "Customer Service",
+      media: 62,
+    },
+    review:
+      "Aplikasi Qiscus sangat membantu dalam meningkatkan kualitas pelayanan kami kepada pelanggan. Fitur live chat yang disediakan sangat praktis dan mudah digunakan. Terima kasih Qiscus!",
+  },
+  {
+    id: 15,
+    user: {
+      name: "Eko Prasetyo",
+      city: "Surabaya",
+      age: 33,
+      gender: "man",
+      media: 15,
+    },
+    institution: {
+      name: "PT BBB",
+      city: "Surabaya",
+      position: "HR Manager",
+      media: 64,
+    },
+    review:
+      "Dengan adanya aplikasi Qiscus, proses rekrutmen karyawan menjadi lebih efisien. Kami dapat dengan mudah berkomunikasi dengan calon karyawan melalui fitur chat. Terima kasih Qiscus!",
+  },
+  {
+    id: 16,
+    user: {
+      name: "Rina Wulandari",
+      city: "Jakarta",
+      age: 29,
+      gender: "woman",
+      media: 16,
+    },
+    institution: {
+      name: "PT CCC",
+      city: "Jakarta",
+      position: "Finance",
+      media: 65,
+    },
+    review:
+      "Saya sangat puas dengan aplikasi Qiscus. Dengan aplikasi ini, saya dapat dengan mudah berkomunikasi dengan rekan kerja di kantor maupun di cabang lain. Terima kasih Qiscus!",
+  },
+];
+
 // WhatWeDo
 export const dummyWhatWeDo = [
   {
