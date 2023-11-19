@@ -9,17 +9,17 @@ export const ReviewSlides = () => {
   const [sliderRef] = useKeenSlider<HTMLDivElement>(
     {
       breakpoints: {
-        "(min-width: 640px)": {
-          slides: { perView: 3, spacing: 24 },
+        "(min-width: 481px)": {
+          slides: { perView: 2, spacing: 16 },
         },
         "(min-width: 768px)": {
-          slides: { perView: 4, spacing: 32 },
+          slides: { perView: 3, spacing: 24 },
         },
         "(min-width: 1024px)": {
-          slides: { perView: 4, spacing: 32 },
+          slides: { perView: 3, spacing: 32 },
         },
       },
-      slides: { perView: 1.4 },
+      slides: { perView: 1.4, spacing: 0 },
       loop: true,
     },
     [
@@ -56,8 +56,8 @@ export const ReviewSlides = () => {
   return (
     <div ref={sliderRef} className="keen-slider w-full">
       {dummyReviews?.slice(0, 8)?.map((item) => (
-        <div key={item.id} className="w-full max-md:pl-4">
-          <div className="keen-slider__slide grid w-full gap-2 overflow-hidden rounded-2xl bg-background p-4">
+        <div key={item.id} className="keen-slider__slide w-full max-md:pl-4">
+          <div className="flex h-full flex-col gap-2 overflow-hidden rounded-2xl bg-background p-4 md:p-6">
             {/* # */}
             <figure aria-hidden className="h-8 w-auto">
               <Image

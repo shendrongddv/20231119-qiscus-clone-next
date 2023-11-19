@@ -1,3 +1,5 @@
+import { Link2 } from "lucide-react";
+
 // LogoClouds
 export const dummyLogoClouds = [
   { id: 1, image: 22 },
@@ -404,5 +406,57 @@ export const dummyBenefits = [
     id: 6,
     title: "+50.000",
     desc: "Agents",
+  },
+];
+
+// HowToUse
+export const dummyHowToUse = [
+  {
+    id: 1,
+    title: "Lead Generation",
+    highlight: "Jaga dan sambut semua lead dengan konsisten",
+    desc: "Sambut pelanggan anda di satu platform dan kelola informasi semua pelanggan dengan CRM.",
+    icon: Link2,
+    color: "#56CCF2",
+    link: {
+      label: "Info Lanjut",
+      url: "/",
+    },
+  },
+  {
+    id: 2,
+    title: "Engagement & Conversion",
+    highlight: "Tingkatkan transparansi dan koordinasi proses penjualan",
+    desc: "Menjawab pertanyaan, memperkenalkan produk, kenali tahap dengan CRM dan tagging.",
+    icon: Link2,
+    color: "#FBB439",
+    link: {
+      label: "Info Lanjut",
+      url: "/",
+    },
+  },
+  {
+    id: 3,
+    title: "Support & Service",
+    highlight: "Jaga kebahagiaan dan loyalitas pelanggan",
+    desc: "Berikan support yang efisien dan terstruktur dengan inbox Omnichannel, integrasi ChatBot, customer satisfaction survey dan solusi lainnya.",
+    icon: Link2,
+    color: "#2F80ED",
+    link: {
+      label: "Info Lanjut",
+      url: "/",
+    },
+  },
+  {
+    id: 4,
+    title: "Customer Marketing",
+    highlight: "Pasarkan lebih banyak layanan ke pelanggan anda",
+    desc: "Berikan informasi terkait produk baru, ajak pelanggan anda dalam survey, tingkatkan penjualan dari pelanggan yang ada.",
+    icon: Link2,
+    color: "#74C162",
+    link: {
+      label: "Info Lanjut",
+      url: "/",
+    },
   },
 ];

@@ -12,7 +12,7 @@ const MediaClouds = () => {
         <ul className="flex flex-wrap items-center justify-center gap-4 md:gap-8">
           {dummyLogoClouds?.slice(0, 14)?.map((item) => (
             <li key={item.id} className="group">
-              <figure className="flex h-5 w-auto items-center justify-center md:h-8">
+              <figure className="flex h-6 w-auto items-center justify-center md:h-8">
                 <Image
                   src={`https://img.logoipsum.com/2${item.image}.svg`}
                   alt={item.image.toString()}
