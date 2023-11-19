@@ -16,7 +16,7 @@ export const SiteLogo = () => {
         alt="Logo"
         width={40}
         height={40}
-        className="h-6 w-auto"
+        className="h-8 w-auto"
       />
     </Link>
   );

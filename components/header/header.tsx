@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import { ModeToggle } from "../mode-toggle";
 import { SiteLogo } from "../site-logo";
 import { cn } from "@/lib/utils";
+import { MenuToggle } from "./menu-toggle";
+import { Button } from "../ui/button";
+import { NavPopover } from "./nav-popover";
 
 const TOP_OFFSET = 64;
 
@@ -39,8 +42,25 @@ export const Header = () => {
           {/* SiteLogo */}
           <SiteLogo />
 
-          {/* ModeToggle */}
-          <ModeToggle />
+          {/* Nav */}
+          <nav className="flex items-center justify-center gap-2">
+            <NavPopover title="Solusi" />
+            <NavPopover title="Produk" />
+            <Button variant="ghost">Harga</Button>
+            <Button variant="ghost">Perusahaan</Button>
+            <Button variant="ghost">Bantuan</Button>
+          </nav>
+
+          {/* # */}
+          <div className="flex items-center justify-center gap-2">
+            {/* Desktop */}
+            <NavPopover title="Masuk" />
+            <Button>Kontak</Button>
+
+            {/* Mobile */}
+            {/* MenuToggle */}
+            <MenuToggle />
+          </div>
         </div>
       </div>
     </header>
