@@ -8,7 +8,7 @@ export const SiteLogo = () => {
   const { theme } = useTheme();
 
   return (
-    <Link href="/" aria-label="Home">
+    <Link href="/" aria-label="Qiscus">
       <Image
         priority
         aria-hidden
@@ -17,6 +17,22 @@ export const SiteLogo = () => {
         width={40}
         height={40}
         className="h-6 w-auto"
+      />
+    </Link>
+  );
+};
+
+export const SiteLogoFooter = () => {
+  return (
+    <Link href="/" aria-label="Qiscus">
+      <Image
+        priority
+        aria-hidden
+        src="/logo-white.svg"
+        alt="Qiscus"
+        width={40}
+        height={40}
+        className="h-10 w-auto"
       />
     </Link>
   );
