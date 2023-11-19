@@ -1,11 +1,27 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+
 import { Button } from "./ui/button";
+
 import { Sun, Moon } from "lucide-react";
 
 export function ModeToggle() {
+  const [isMounted, setIsMounted] = useState(false);
   const { setTheme, theme } = useTheme();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    theme === "light";
+  }, [theme]);
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <>

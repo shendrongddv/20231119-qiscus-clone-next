@@ -12,7 +12,7 @@ export const SiteLogo = () => {
       <Image
         priority
         aria-hidden
-        src={theme === "light" ? "/logo-dark.svg" : "/logo-white.svg"}
+        src={theme === "dark" ? "/logo-white.svg" : "/logo.svg"}
         alt="Logo"
         width={40}
         height={40}

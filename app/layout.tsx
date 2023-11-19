@@ -32,9 +32,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ToastProvider />
-          <Header />
-          <main>{children}</main>
-          <footer></footer>
+          {children}
         </ThemeProvider>
       </body>
     </html>

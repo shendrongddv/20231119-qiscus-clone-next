@@ -1,12 +1,11 @@
-import { Kanit as FontDisplay, Inter as FontBody } from "next/font/google";
+import { Inter } from "next/font/google";
 
-export const fontDisplay = FontDisplay({
+export const fontDisplay = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-display",
 });
 
-export const fontBody = FontBody({
+export const fontBody = Inter({
   subsets: ["latin"],
   variable: "--font-body",
 });
