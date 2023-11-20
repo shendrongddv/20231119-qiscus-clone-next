@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ModeToggle } from "../mode-toggle";
 import { SiteLogo } from "../site-logo";
 import { cn } from "@/lib/utils";
 import { MenuToggle } from "./menu-toggle";
@@ -43,7 +42,7 @@ export const Header = () => {
           <SiteLogo />
 
           {/* Nav */}
-          <nav className="flex items-center justify-center gap-2">
+          <nav className="hidden items-center justify-center gap-2 md:flex ">
             <NavPopover title="Solusi" />
             <NavPopover title="Produk" />
             <Button variant="ghost">Harga</Button>
@@ -51,14 +50,14 @@ export const Header = () => {
             <Button variant="ghost">Bantuan</Button>
           </nav>
 
-          {/* # */}
-          <div className="flex items-center justify-center gap-2">
-            {/* Desktop */}
+          {/* Show Desktop */}
+          <div className="hidden md:flex md:items-center md:justify-between md:gap-2">
             <NavPopover title="Masuk" />
             <Button>Kontak</Button>
+          </div>
 
-            {/* Mobile */}
-            {/* MenuToggle */}
+          {/*Show Mobile */}
+          <div className="flex items-center justify-center gap-2 md:hidden">
             <MenuToggle />
           </div>
         </div>
