@@ -1,3 +1,4 @@
+import { CounterUp } from "@/components/counter-up";
 import { dummyBenefits } from "@/config/dummy";
 
 const Benefits = () => {
@@ -17,7 +18,15 @@ const Benefits = () => {
               key={item.id}
               className="flex flex-col items-center justify-center gap-2 rounded-2xl border-2 border-white/25 p-4 text-center md:justify-start md:p-6"
             >
-              <h3 className="h2 !text-white">{item.title}</h3>
+              <h3 className="h2 w-10/12 !text-white">
+                <CounterUp
+                  prefix={item.counter.prefix}
+                  end={item.counter.value}
+                  suffix={item.counter.suffix}
+                  enableScrollSpy
+                  scrollSpyOnce
+                />
+              </h3>
               <p className="text-xs font-medium text-white md:text-lg md:leading-tight">
                 {item.desc}
               </p>

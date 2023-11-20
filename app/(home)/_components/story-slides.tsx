@@ -58,7 +58,7 @@ export const StorySlides = () => {
     <div ref={sliderRef} className="keen-slider w-full">
       {dummyReviews?.slice(0, 8)?.map((item) => (
         <div key={item.id} className="keen-slider__slide w-full max-md:pl-4">
-          <div className="flex h-full flex-col gap-2 overflow-hidden rounded-2xl border bg-background md:p-6">
+          <div className="flex h-full flex-col gap-2 overflow-hidden rounded-2xl border bg-background">
             {/* # */}
             <figure
               aria-hidden

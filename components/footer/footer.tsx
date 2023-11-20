@@ -1,15 +1,17 @@
-import { siteLegals, siteNavFoooter, siteSocials } from "@/config/site";
+import Image from "next/image";
 import Link from "next/link";
-import { SiteLogoFooter } from "../site-logo";
+
+import { siteLegals, siteNavFoooter, siteSocials } from "@/config/site";
+import { LucideIcon } from "lucide-react";
+
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
-import { LucideIcon } from "lucide-react";
-import { Item } from "@radix-ui/react-dropdown-menu";
-import Image from "next/image";
+
+import { SiteLogoFooter } from "../site-logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#01416c] px-4 pt-24 text-sm text-white/75">
+    <footer className="!dark:bg-primary-foreground !bg-primary px-4 pt-24 text-sm text-white/75">
       <div className="container space-y-12">
         {/* Row */}
         <div className="flex flex-col gap-12 md:flex-row md:justify-between">

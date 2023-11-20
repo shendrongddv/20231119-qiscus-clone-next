@@ -1,7 +1,10 @@
+"use client";
+
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -12,9 +15,27 @@ const Hero = () => {
           {/* Col */}
           <div className="md:w-6/12">
             <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-start">
-              <h1 className="h1">
-                Omnichannel Marketing Platform untuk Maksimalkan Penjualan &
-                Loyalitas Pelanggan.
+              <h1 className="h1 whitespace-normal">
+                Omnichannel{" "}
+                <span className="text-secondary">
+                  <TypeAnimation
+                    preRenderFirstString={true}
+                    sequence={[
+                      500,
+                      "Marketing",
+                      1000,
+                      "Support",
+                      1000,
+                      "Sales",
+                      1000,
+                    ]}
+                    speed={50}
+                    // style={{ fontSize: '2em' }}
+                    repeat={Infinity}
+                  />
+                </span>
+                <br />
+                Platform untuk Maksimalkan Penjualan & Loyalitas Pelanggan.
               </h1>
 
               <p className="mt-4 text-lg font-medium">
@@ -34,7 +55,7 @@ const Hero = () => {
                   buttonVariants({
                     variant: "default",
                     size: "default",
-                    className: "mt-4 font-semibold",
+                    className: "mt-4",
                   }),
                 )}
               >

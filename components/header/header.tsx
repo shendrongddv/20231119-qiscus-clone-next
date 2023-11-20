@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { MenuToggle } from "./menu-toggle";
 import { Button } from "../ui/button";
 import { NavPopover } from "./nav-popover";
+import { NavDesktop } from "./nav-desktop";
 
 const TOP_OFFSET = 64;
 
@@ -42,18 +43,12 @@ export const Header = () => {
           <SiteLogo />
 
           {/* Nav */}
-          <nav className="hidden items-center justify-center gap-2 md:flex ">
-            <NavPopover title="Solusi" />
-            <NavPopover title="Produk" />
-            <Button variant="ghost">Harga</Button>
-            <Button variant="ghost">Perusahaan</Button>
-            <Button variant="ghost">Bantuan</Button>
-          </nav>
+          <NavDesktop />
 
           {/* Show Desktop */}
           <div className="hidden md:flex md:items-center md:justify-between md:gap-2">
             <NavPopover title="Masuk" />
-            <Button>Kontak</Button>
+            <Button variant="default">Kontak</Button>
           </div>
 
           {/*Show Mobile */}

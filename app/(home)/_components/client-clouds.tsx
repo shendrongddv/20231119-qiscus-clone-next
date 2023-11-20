@@ -1,5 +1,6 @@
-import { dummyLogoClouds } from "@/config/dummy";
 import Image from "next/image";
+import { dummyLogoClouds } from "@/config/dummy";
+import { CounterUp } from "@/components/counter-up";
 
 const ClientClouds = () => {
   return (
@@ -7,7 +8,12 @@ const ClientClouds = () => {
       <div className="container flex flex-col items-center gap-12">
         {/* Row */}
         <h2 className="h2 text-center md:w-3/5">
-          Digunakan Oleh 2000+ Perusahaan Terpercaya
+          Digunakan Oleh&nbsp;
+          <span className="text-secondary">
+            <CounterUp end={2000} suffix="+" enableScrollSpy scrollSpyOnce />
+          </span>
+          <br />
+          Perusahaan Terpercaya
         </h2>
 
         {/* Row */}

@@ -15,8 +15,13 @@ export const MenuToggle = () => {
   return (
     <Sheet>
       <SheetTrigger asChild className="flex md:hidden">
-        <Button variant="outline" size="icon">
-          <Menu className="h-4 w-4" />
+        <Button
+          aria-label="Toggle Menu"
+          variant="outline"
+          size="icon"
+          className="rounded-lg"
+        >
+          <Menu className="h-5 w-5 text-primary" />
         </Button>
       </SheetTrigger>
       <SheetContent
@@ -44,9 +49,6 @@ export const MenuToggle = () => {
 
         {/* # */}
         <NavMobile />
-        {/* # */}
-        {/* # */}
-        {/* # */}
       </SheetContent>
     </Sheet>
   );

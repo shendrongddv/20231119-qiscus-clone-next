@@ -381,31 +381,61 @@ export const dummyBenefits = [
     id: 1,
     title: "+2X",
     desc: "Up to 2X Increase in Sales Conversion",
+    counter: {
+      prefix: "+",
+      value: 2,
+      suffix: "X",
+    },
   },
   {
     id: 2,
     title: "+50%",
     desc: "Up to 50% Reduction in Manpower Cost",
+    counter: {
+      prefix: "+",
+      value: 50,
+      suffix: "%",
+    },
   },
   {
     id: 3,
     title: "+90%",
     desc: "Up to 90% Increase in Agent Productivity",
+    counter: {
+      prefix: "+",
+      value: 90,
+      suffix: "%",
+    },
   },
   {
     id: 4,
     title: "+2 Billion",
     desc: "Messages",
+    counter: {
+      prefix: "+",
+      value: 2,
+      suffix: " Billions",
+    },
   },
   {
     id: 5,
     title: "+100 Million",
     desc: "End Users",
+    counter: {
+      prefix: "+",
+      value: 100,
+      suffix: " Millions",
+    },
   },
   {
     id: 6,
     title: "+50.000",
     desc: "Agents",
+    counter: {
+      prefix: "+",
+      value: 50.0,
+      suffix: "",
+    },
   },
 ];
 

@@ -80,7 +80,7 @@ const ItemCard = ({
 
         <p className="text-sm">{desc}</p>
 
-        <Button asChild className="mt-auto">
+        <Button asChild variant="default" className="mt-auto">
           <Link href={linkUrl} aria-label={linkLabel}>
             {linkLabel}
           </Link>
