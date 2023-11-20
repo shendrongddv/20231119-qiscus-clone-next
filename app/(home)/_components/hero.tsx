@@ -1,10 +1,10 @@
 "use client";
 
+import { TypingText } from "@/components/typing-text";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -18,21 +18,7 @@ const Hero = () => {
               <h1 className="h1 whitespace-normal">
                 Omnichannel{" "}
                 <span className="text-secondary">
-                  <TypeAnimation
-                    preRenderFirstString={true}
-                    sequence={[
-                      500,
-                      "Marketing",
-                      1000,
-                      "Support",
-                      1000,
-                      "Sales",
-                      1000,
-                    ]}
-                    speed={50}
-                    // style={{ fontSize: '2em' }}
-                    repeat={Infinity}
-                  />
+                  <TypingText />
                 </span>
                 <br />
                 Platform untuk Maksimalkan Penjualan & Loyalitas Pelanggan.
