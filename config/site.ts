@@ -358,7 +358,7 @@ export const testMenuMain = [
     id: 3,
     label: "Produk",
     url: "/",
-    isGroup: true,
+    isGroup: false,
     links: [
       {
         id: 1,

@@ -16,7 +16,7 @@ import { SheetClose } from "../ui/sheet";
 export const NavMobile = () => {
   return (
     <nav className="overflow-y-auto">
-      <Accordion type="multiple">
+      <Accordion type="single" collapsible>
         {testMenuMain?.map((item) => (
           <AccordionItem
             key={item.id}
@@ -25,11 +25,11 @@ export const NavMobile = () => {
           >
             {item.isGroup ? (
               <>
-                <AccordionTrigger className="h-10 px-4 text-sm font-medium text-foreground hover:bg-accent/40 hover:no-underline [&[data-state=open]]:bg-accent/40">
+                <AccordionTrigger className="h-10 px-4 text-sm font-medium text-foreground hover:bg-accent/40 hover:no-underline [&[data-state=open]]:bg-accent">
                   {item.label}
                 </AccordionTrigger>
-                <AccordionContent className="bg-accent/40 px-4">
-                  <ul className="grid grid-cols-3 gap-1">
+                <AccordionContent className="bg-accent px-4">
+                  <ul className="grid grid-cols-3 gap-2">
                     {item.links?.map((item) => (
                       <li key={item.id}>
                         <LinkItemBeta
@@ -91,12 +91,14 @@ const LinkItemBeta = ({ label, url, icon: Icon }: LinkItemProps) => {
             variant: "outline",
             size: "default",
             className:
-              "flex h-full flex-col items-center gap-2 whitespace-normal border-none p-4 text-center",
+              "flex h-full flex-col items-center gap-2 whitespace-normal p-4 text-center",
           }),
         )}
       >
         {Icon && <Icon className="h-6 w-6 text-primary" />}
-        <span className="text-[10px] font-normal leading-tight">{label}</span>
+        <span className="text-[10px] font-normal leading-tight text-foreground">
+          {label}
+        </span>
       </Link>
     </SheetClose>
   );
