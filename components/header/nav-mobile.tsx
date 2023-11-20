@@ -15,7 +15,7 @@ import { SheetClose } from "../ui/sheet";
 
 export const NavMobile = () => {
   return (
-    <nav>
+    <nav className="overflow-y-auto">
       <Accordion type="multiple">
         {testMenuMain?.map((item) => (
           <AccordionItem

@@ -21,7 +21,7 @@ export const MenuToggle = () => {
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="flex h-full w-full flex-col p-0 md:hidden"
+        className="flex h-screen w-full flex-col p-0 md:hidden"
       >
         {/* # */}
         <SheetHeader>
